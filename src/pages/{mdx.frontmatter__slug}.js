@@ -6,7 +6,9 @@ import Seo from '../components/seo'
 const Planet = ({ data, children }) => {
   return (
     <Layout pageTitle={data.mdx.frontmatter.title}>
+      <h1>{data.mdx.frontmatter.title}</h1>
       <p>{data.mdx.frontmatter.overview}</p>
+      <p>Source: <a href={data.mdx.frontmatter.overview_source}>Wikipedia</a></p>
       {children}
     </Layout>
   )
@@ -18,6 +20,11 @@ query ($id: String) {
       frontmatter {
         title
         overview
+        img_planet_alt
+        overview_source
+        img_planet {
+          publicURL
+        }
       }
     }
   }

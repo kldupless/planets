@@ -5,16 +5,7 @@ import Seo from '../components/seo'
 
 const IndexPage = ({ data }) => {
     return (
-      <Layout pageTitle="Planets">
-        <ul>
-        {
-          data.allFile.nodes.map(node => (
-            <li key={node.name}>
-              {node.name}
-            </li>
-          ))
-        }
-        </ul>
+      <Layout pageTitle="The Planets">
       </Layout>
     )
   }
@@ -28,6 +19,6 @@ query MyQuery {
   }
 `
 
-export const Head = () => <Seo title="Planets" />
+export const Head = () => <Seo title="The Planets" />
 
 export default IndexPage
