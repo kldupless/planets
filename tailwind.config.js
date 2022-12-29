@@ -26,7 +26,8 @@ module.exports = {
       "base": "0.875rem",
       "lg": "1.25rem",
       "xl": "1.75rem",
-      "xxl": "2.5rem"
+      "xxl": "2.5rem",
+      "3xl": "5rem"
      },
      "borderRadius": {
       "none": "0",
